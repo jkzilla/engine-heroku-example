@@ -1,5 +1,7 @@
 # Apollo Engine + Heroku
-An example of how to use Engine as a Docker container to deploy to Heroku.  This guide assumes you already have a working Docker installation and have installed the Heroku CLI tools.
+An example of how to deploy the Engine Proxy as a standalone container on Heroku, to run it in front of a GraphQL server hosted elsewhere (eg, on Amazon Lambda).  This guide assumes you already have a working Docker installation and have installed the Heroku CLI tools.
+
+**These instructions aren't how you run a Node GraphQL server on Heroku with Engine built-in.** You don't need to do anything extra to do that: just follow the [basic Node Engine setup instructions](https://www.apollographql.com/docs/engine/setup-node.html): they work great with Engine with no extra config.  This is specifically about using Heroku to run a stand-alone Engine proxy.
 
 ## Setup
 First, clone the example repo.
